@@ -32,3 +32,6 @@ C:\Users\rehan\Source\Repos\HappyJourney\HappyJourney\HappyJourney\obj\Debug\Hap
 C:\Users\rehan\Source\Repos\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.csproj.CoreCompileInputs.cache
 C:\Users\rehan\Source\Repos\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.exe
 C:\Users\rehan\Source\Repos\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.pdb
+C:\Users\rehan\source\repos\HappyJourney\HappyJourney\HappyJourney\bin\Debug\happy_journey.mdf
+C:\Users\rehan\source\repos\HappyJourney\HappyJourney\HappyJourney\bin\Debug\happy_journey_log.ldf
+C:\Users\rehan\source\repos\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.Login.resources
