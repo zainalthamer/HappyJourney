@@ -62,12 +62,12 @@ namespace HappyJourney
 
         private void lblLoginLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Login loginForm = new Login();
-            loginForm.Show();
+            Login login = new Login();
+            login.Show();
             this.Hide();
         }
 
-        private void btnSignup_Click(object sender, EventArgs e)
+        private void btnSignup_Click_1(object sender, EventArgs e)
         {
             // retrieve input 
             string firstName = txtFirstName.Text.Trim();

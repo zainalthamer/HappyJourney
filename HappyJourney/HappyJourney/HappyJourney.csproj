@@ -90,6 +90,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>happy_journeyDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inbox.cs">
       <SubType>Form</SubType>
     </Compile>

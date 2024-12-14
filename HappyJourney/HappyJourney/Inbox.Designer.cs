@@ -127,6 +127,7 @@
             this.MainMenuStrip = this.mnuInbox;
             this.Name = "Inbox";
             this.Text = "Inbox";
+            this.Load += new System.EventHandler(this.Inbox_Load);
             this.pnlInbox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridInbox)).EndInit();
             this.ResumeLayout(false);
