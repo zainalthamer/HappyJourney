@@ -12,16 +12,18 @@ namespace HappyJourney
 {
     public partial class Compose : Form
     {
-        private int roleId;
+        private int loggedInUserId;
+        private int loggedInUserRoleId;
 
-        public Compose(int roleId)
+        public Compose(int userId,int roleId)
         {
             InitializeComponent();
+            loggedInUserId = userId;
+            loggedInUserRoleId = roleId;
 
             // Setup placeholders
             SetupPlaceholder(txtRecepient, "To:");
             SetupPlaceholder(txtMessageContent, "Message");
-            this.roleId = roleId;
         }
 
         private void Compose_Load(object sender, EventArgs e)

@@ -12,12 +12,14 @@ namespace HappyJourney
 {
     public partial class Home : Form
     {
-        private int roleId;
+        private int loggedInUserId;
+        private int loggedInUserRoleId;
 
-        public Home(int roleId)
+        public Home(int userId, int roleId)
         {
             InitializeComponent();
-            this.roleId = roleId;
+            loggedInUserId = userId;
+            loggedInUserRoleId = roleId;
             SetupMenuStrip();
         }
 
@@ -47,14 +49,14 @@ namespace HappyJourney
 
             menuStrip.Items.Add(homeItem);
 
-            if (roleId == 1)
+            if (loggedInUserRoleId == 1)
             {
                 ToolStripMenuItem dashboardItem = new ToolStripMenuItem("Dashboard");
                 dashboardItem.Click += (s, e) => NavigateToDashboard();
                 menuStrip.Items.Add(dashboardItem);
             }
 
-            else if (roleId == 3)
+            else if (loggedInUserRoleId == 3)
             {
                 ToolStripMenuItem bookingsItem = new ToolStripMenuItem("Bookings");
                 bookingsItem.Click += (s, e) => NavigateToBookings();
@@ -71,52 +73,44 @@ namespace HappyJourney
 
         private void NavigateToInbox()
         {
-            this.Hide(); 
-            Inbox inbox = new Inbox(roleId);
-            inbox.FormClosed += (s, e) => this.Show();
-            inbox.Show();
+            Inbox inbox = new Inbox(loggedInUserId, loggedInUserRoleId);
+            inbox.ShowDialog();
+            this.Hide();
+
         }
 
         private void NavigateToCompose()
         {
+            Compose compose = new Compose(loggedInUserId, loggedInUserRoleId);
+            compose.ShowDialog();
             this.Hide();
-            Compose compose = new Compose(roleId);
-            compose.FormClosed += (s, e) => this.Show();
-            compose.Show();
         }
 
         private void NavigateToProfile()
         {
+            Profile profile = new Profile(loggedInUserId, loggedInUserRoleId);
+            profile.ShowDialog();
             this.Hide();
-            Profile profile = new Profile(roleId);
-            profile.FormClosed += (s, e) => this.Show();
-            profile.Show();
         }
 
         private void NavigateToDashboard()
         {
+            Dashboard dashboard = new Dashboard(loggedInUserId, loggedInUserRoleId);
+            dashboard.ShowDialog();
             this.Hide();
-            Dashboard dashboard = new Dashboard(roleId);
-            dashboard.FormClosed += (s, e) => this.Show();
-            dashboard.Show();
         }
 
         private void NavigateToBookings()
         {
+            Bookings bookings = new Bookings(loggedInUserId, loggedInUserRoleId);
+            bookings.ShowDialog();
             this.Hide();
-            Bookings bookings = new Bookings(roleId);
-            bookings.FormClosed += (s, e) => this.Show();
-            bookings.Show();
         }
 
         private void NavigateToHome()
         {
-            this.Hide();
-            Home home = new Home(roleId);
-            home.FormClosed += (s, e) => this.Show();
-            home.Show();
+            MessageBox.Show("You are already on the Home page.");
         }
-
     }
     }
 

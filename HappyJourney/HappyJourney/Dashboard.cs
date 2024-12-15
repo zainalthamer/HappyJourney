@@ -12,38 +12,40 @@ namespace HappyJourney
 {
     public partial class Dashboard : Form
     {
-        private int roleId;
+        private int loggedInUserId;
+        private int loggedInUserRoleId;
 
-        public Dashboard(int roleId)
+        public Dashboard(int userId, int roleId)
         {
             InitializeComponent();
-            this.roleId = roleId;
+            loggedInUserId = userId;
+            loggedInUserRoleId = roleId;
         }
 
         private void inboxToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Inbox inbox = new Inbox(roleId);
+            Inbox inbox = new Inbox(loggedInUserId, loggedInUserRoleId);
             inbox.Show();
             this.Close();
         }
 
         private void composeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Compose compose = new Compose(roleId);
+            Compose compose = new Compose(loggedInUserId, loggedInUserRoleId);
             compose.Show();
             this.Close();
         }
 
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Home home = new Home(roleId);
+            Home home = new Home(loggedInUserId, loggedInUserRoleId);
             home.Show();
             this.Close();
         }
 
         private void profileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Profile profile = new Profile(roleId);
+            Profile profile = new Profile(loggedInUserId, loggedInUserRoleId);
             profile.Show();
             this.Close();
         }

@@ -12,12 +12,14 @@ namespace HappyJourney
 {
     public partial class Profile : Form
     {
-        private int roleId;
+        private int loggedInUserId;
+        private int loggedInUserRoleId;
 
-        public Profile(int roleId)
+        public Profile(int userId, int roleId)
         {
             InitializeComponent();
-            this.roleId = roleId;
+            loggedInUserId = userId;
+            loggedInUserRoleId = roleId;
         }
 
         private void Profile_Load(object sender, EventArgs e)

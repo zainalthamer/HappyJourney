@@ -37,7 +37,7 @@
             this.mnuHome.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.mnuHome.Location = new System.Drawing.Point(0, 0);
             this.mnuHome.Name = "mnuHome";
-            this.mnuHome.Size = new System.Drawing.Size(1472, 42);
+            this.mnuHome.Size = new System.Drawing.Size(1472, 48);
             this.mnuHome.TabIndex = 0;
             this.mnuHome.Text = "menuStrip1";
             // 

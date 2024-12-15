@@ -61,7 +61,7 @@ namespace HappyJourney
                         LoggedInUserId = Convert.ToInt32(reader["user_id"]);
                         LoggedInUserRoleId = Convert.ToInt32(reader["role_id"]);
 
-                        Home home = new Home(LoggedInUserRoleId);
+                        Home home = new Home(LoggedInUserId, LoggedInUserRoleId);
                         this.Hide();
                         home.ShowDialog();
                         this.Close();

@@ -12,12 +12,14 @@ namespace HappyJourney
 {
     public partial class Bookings : Form
     {
-        private int roleId;
+        private int loggedInUserId;
+        private int loggedInUserRoleId;
 
-        public Bookings(int roleId)
+        public Bookings(int userId, int roleId)
         {
             InitializeComponent();
-            this.roleId = roleId;
+            loggedInUserId = userId;
+            loggedInUserRoleId = roleId;
         }
 
         private void Bookings_Load(object sender, EventArgs e)

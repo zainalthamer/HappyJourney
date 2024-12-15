@@ -35,8 +35,6 @@
             this.lblInbox = new System.Windows.Forms.Label();
             this.pnlInbox = new System.Windows.Forms.Panel();
             this.dataGridInbox = new System.Windows.Forms.DataGridView();
-            this.Message = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Timestamp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlInbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridInbox)).BeginInit();
             this.SuspendLayout();
@@ -81,9 +79,6 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridInbox.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridInbox.ColumnHeadersHeight = 30;
-            this.dataGridInbox.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Message,
-            this.Timestamp});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -102,18 +97,6 @@
             this.dataGridInbox.RowTemplate.Height = 33;
             this.dataGridInbox.Size = new System.Drawing.Size(1292, 537);
             this.dataGridInbox.TabIndex = 0;
-            // 
-            // Message
-            // 
-            this.Message.HeaderText = "Message";
-            this.Message.MinimumWidth = 10;
-            this.Message.Name = "Message";
-            // 
-            // Timestamp
-            // 
-            this.Timestamp.HeaderText = "Timestamp";
-            this.Timestamp.MinimumWidth = 10;
-            this.Timestamp.Name = "Timestamp";
             // 
             // Inbox
             // 
@@ -141,7 +124,5 @@
         private System.Windows.Forms.Label lblInbox;
         private System.Windows.Forms.Panel pnlInbox;
         private System.Windows.Forms.DataGridView dataGridInbox;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Message;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Timestamp;
     }
 }

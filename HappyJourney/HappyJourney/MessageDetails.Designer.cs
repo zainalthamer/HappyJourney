@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MessageDetails));
             this.imgBackArrow = new System.Windows.Forms.PictureBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.mnuMessageDetails = new System.Windows.Forms.MenuStrip();
             this.lblFrom = new System.Windows.Forms.Label();
             this.lblSender = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
@@ -51,15 +51,15 @@
             this.imgBackArrow.TabStop = false;
             this.imgBackArrow.Click += new System.EventHandler(this.imgBackArrow_Click);
             // 
-            // menuStrip1
+            // mnuMessageDetails
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1472, 24);
-            this.menuStrip1.TabIndex = 22;
-            this.menuStrip1.Text = "menuStrip1";
+            this.mnuMessageDetails.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.mnuMessageDetails.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.mnuMessageDetails.Location = new System.Drawing.Point(0, 0);
+            this.mnuMessageDetails.Name = "mnuMessageDetails";
+            this.mnuMessageDetails.Size = new System.Drawing.Size(1472, 42);
+            this.mnuMessageDetails.TabIndex = 22;
+            this.mnuMessageDetails.Text = "menuStrip1";
             // 
             // lblFrom
             // 
@@ -137,8 +137,8 @@
             this.Controls.Add(this.lblSender);
             this.Controls.Add(this.lblFrom);
             this.Controls.Add(this.imgBackArrow);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.mnuMessageDetails);
+            this.MainMenuStrip = this.mnuMessageDetails;
             this.Name = "MessageDetails";
             this.Text = "MessageDetails";
             this.Load += new System.EventHandler(this.MessageDetails_Load);
@@ -151,7 +151,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox imgBackArrow;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip mnuMessageDetails;
         private System.Windows.Forms.Label lblFrom;
         private System.Windows.Forms.Label lblSender;
         private System.Windows.Forms.Label lblDate;
