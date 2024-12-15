@@ -12,9 +12,12 @@ namespace HappyJourney
 {
     public partial class Inbox : Form
     {
-        public Inbox()
+        public int roleId;
+
+        public Inbox(int roleId)
         {
             InitializeComponent();
+            this.roleId = roleId;
         }
 
         private void Inbox_Load(object sender, EventArgs e)

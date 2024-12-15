@@ -57,7 +57,7 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1472, 48);
+            this.menuStrip1.Size = new System.Drawing.Size(1472, 24);
             this.menuStrip1.TabIndex = 22;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -141,6 +141,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MessageDetails";
             this.Text = "MessageDetails";
+            this.Load += new System.EventHandler(this.MessageDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgBackArrow)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

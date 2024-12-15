@@ -28,12 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.mnuHome = new System.Windows.Forms.MenuStrip();
+            this.SuspendLayout();
+            // 
+            // mnuHome
+            // 
+            this.mnuHome.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.mnuHome.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.mnuHome.Location = new System.Drawing.Point(0, 0);
+            this.mnuHome.Name = "mnuHome";
+            this.mnuHome.Size = new System.Drawing.Size(1472, 42);
+            this.mnuHome.TabIndex = 0;
+            this.mnuHome.Text = "menuStrip1";
+            // 
+            // Home
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1472, 719);
+            this.Controls.Add(this.mnuHome);
+            this.Name = "Home";
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.Home_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.MenuStrip mnuHome;
     }
 }

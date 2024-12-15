@@ -16,6 +16,7 @@ namespace HappyJourney
     public partial class Login : Form
     {
         public static int LoggedInUserId = -1; // the default value indicates that no user is logged in
+        public static int LoggedInUserRoleId = -1;
 
         public Login()
         {
@@ -44,7 +45,7 @@ namespace HappyJourney
             string password = txtBoxPassword.Text.Trim();
             string hashedPassword = HashPassword(password);
 
-            string query = "SELECT user_id FROM [User] WHERE email = @Email AND hashed_password = @Password";
+            string query = "SELECT user_id, role_id FROM [User] WHERE email = @Email AND hashed_password = @Password";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -54,15 +55,18 @@ namespace HappyJourney
                     cmd.Parameters.AddWithValue ("@Password", hashedPassword);
                     connection.Open();
 
-                    object result = cmd.ExecuteScalar();
-                    if (result != null)
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
                     {
-                        LoggedInUserId = Convert.ToInt32(result);
-                        MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoggedInUserId = Convert.ToInt32(reader["user_id"]);
+                        LoggedInUserRoleId = Convert.ToInt32(reader["role_id"]);
 
-                        Home home = new Home();
-                        home.Show();
+                        Home home = new Home(LoggedInUserRoleId);
+                        this.Hide();
+                        home.ShowDialog();
                         this.Close();
+
+
                     }
                     else
                     {

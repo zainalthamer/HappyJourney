@@ -72,39 +72,41 @@
             this.composeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1472, 42);
+            this.menuStrip1.Size = new System.Drawing.Size(1472, 40);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // homeToolStripMenuItem
             // 
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(99, 38);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(99, 36);
             this.homeToolStripMenuItem.Text = "Home";
+            this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
             // dashboardToolStripMenuItem
             // 
             this.dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
-            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(149, 38);
+            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(149, 36);
             this.dashboardToolStripMenuItem.Text = "Dashboard";
             // 
             // profileToolStripMenuItem
             // 
             this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
-            this.profileToolStripMenuItem.Size = new System.Drawing.Size(102, 38);
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(102, 36);
             this.profileToolStripMenuItem.Text = "Profile";
+            this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
             // 
             // inboxToolStripMenuItem
             // 
             this.inboxToolStripMenuItem.Name = "inboxToolStripMenuItem";
-            this.inboxToolStripMenuItem.Size = new System.Drawing.Size(93, 38);
+            this.inboxToolStripMenuItem.Size = new System.Drawing.Size(93, 36);
             this.inboxToolStripMenuItem.Text = "Inbox";
             this.inboxToolStripMenuItem.Click += new System.EventHandler(this.inboxToolStripMenuItem_Click);
             // 
             // composeToolStripMenuItem
             // 
             this.composeToolStripMenuItem.Name = "composeToolStripMenuItem";
-            this.composeToolStripMenuItem.Size = new System.Drawing.Size(135, 38);
+            this.composeToolStripMenuItem.Size = new System.Drawing.Size(135, 36);
             this.composeToolStripMenuItem.Text = "Compose";
             this.composeToolStripMenuItem.Click += new System.EventHandler(this.composeToolStripMenuItem_Click);
             // 
@@ -249,6 +251,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Dashboard";
             this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
