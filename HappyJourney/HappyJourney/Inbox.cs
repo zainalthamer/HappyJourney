@@ -16,5 +16,10 @@ namespace HappyJourney
         {
             InitializeComponent();
         }
+
+        private void Inbox_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

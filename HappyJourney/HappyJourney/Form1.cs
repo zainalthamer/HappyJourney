@@ -58,5 +58,19 @@ namespace HappyJourney
             compose.Show();
             this.Hide();
         }
+
+        private void btnFlights_Click(object sender, EventArgs e)
+        {
+            Flights flights = new Flights();
+            flights.Show();
+            this.Hide();
+        }
+
+        private void btnBookings_Click(object sender, EventArgs e)
+        {
+            Bookings bookings = new Bookings();
+            bookings.Show();
+            this.Hide();
+        }
     }
 }
