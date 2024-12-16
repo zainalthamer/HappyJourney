@@ -68,5 +68,12 @@ namespace HappyJourney
             manageRoles.ShowDialog();
             this.Hide();
         }
+
+        private void btnManageFlights_Click(object sender, EventArgs e)
+        {
+            ManageFlights manageFlights = new ManageFlights(loggedInUserId, loggedInUserRoleId);
+            manageFlights.ShowDialog();
+            this.Hide();
+        }
     }
 }

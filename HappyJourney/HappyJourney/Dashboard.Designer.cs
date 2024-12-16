@@ -147,6 +147,7 @@
             this.btnManageFlights.TabIndex = 6;
             this.btnManageFlights.Text = "Manage Flights";
             this.btnManageFlights.UseVisualStyleBackColor = false;
+            this.btnManageFlights.Click += new System.EventHandler(this.btnManageFlights_Click);
             // 
             // btnManageServices
             // 

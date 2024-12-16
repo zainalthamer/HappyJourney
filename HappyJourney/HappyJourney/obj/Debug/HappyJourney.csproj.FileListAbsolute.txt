@@ -65,3 +65,6 @@ C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug
 C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.exe
 C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.pdb
 C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.ManageRoles.resources
+C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.ManageFlights.resources
+C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.EditFlight.resources
+C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.AddFlight.resources
