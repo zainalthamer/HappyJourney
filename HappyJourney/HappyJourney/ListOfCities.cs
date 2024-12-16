@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace HappyJourney
 {
-    public partial class AddCountry : Form
+    public partial class ListOfCities : Form
     {
-        public AddCountry()
+        public ListOfCities()
         {
             InitializeComponent();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

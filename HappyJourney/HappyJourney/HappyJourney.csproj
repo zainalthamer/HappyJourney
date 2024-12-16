@@ -50,6 +50,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,11 +62,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddCountry.cs">
+    <Compile Include="Add Country.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddCountry.Designer.cs">
-      <DependentUpon>AddCountry.cs</DependentUpon>
+    <Compile Include="Add Country.Designer.cs">
+      <DependentUpon>Add Country.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAirport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAirport.Designer.cs">
+      <DependentUpon>AddAirport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCity.Designer.cs">
+      <DependentUpon>AddCity.cs</DependentUpon>
     </Compile>
     <Compile Include="Book Flight.cs">
       <SubType>Form</SubType>
@@ -108,6 +121,30 @@
     <Compile Include="Inbox.Designer.cs">
       <DependentUpon>Inbox.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListOfAirports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListOfAirports.Designer.cs">
+      <DependentUpon>ListOfAirports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfBackups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListOfBackups.Designer.cs">
+      <DependentUpon>ListOfBackups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfCities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListOfCities.Designer.cs">
+      <DependentUpon>ListOfCities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfGeneratedReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListOfGeneratedReports.Designer.cs">
+      <DependentUpon>ListOfGeneratedReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +172,15 @@
     <Compile Include="Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Add Country.resx">
+      <DependentUpon>Add Country.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAirport.resx">
+      <DependentUpon>AddAirport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCity.resx">
+      <DependentUpon>AddCity.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Book Flight.resx">
       <DependentUpon>Book Flight.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +195,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inbox.resx">
       <DependentUpon>Inbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfAirports.resx">
+      <DependentUpon>ListOfAirports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfBackups.resx">
+      <DependentUpon>ListOfBackups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfCities.resx">
+      <DependentUpon>ListOfCities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfGeneratedReports.resx">
+      <DependentUpon>ListOfGeneratedReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
