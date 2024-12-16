@@ -72,5 +72,12 @@ namespace HappyJourney
             bookings.Show();
             this.Hide();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Profile profile = new Profile();
+            profile.Show();
+            this.Hide();
+        }
     }
 }

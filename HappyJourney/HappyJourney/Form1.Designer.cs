@@ -36,6 +36,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.btnFlights = new System.Windows.Forms.Button();
             this.btnBookings = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -125,11 +126,23 @@
             this.btnBookings.UseVisualStyleBackColor = true;
             this.btnBookings.Click += new System.EventHandler(this.btnBookings_Click);
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(42, 130);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(135, 23);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "View Profile";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(617, 340);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.btnBookings);
             this.Controls.Add(this.btnFlights);
             this.Controls.Add(this.button5);
@@ -155,5 +168,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btnFlights;
         private System.Windows.Forms.Button btnBookings;
+        private System.Windows.Forms.Button button6;
     }
 }

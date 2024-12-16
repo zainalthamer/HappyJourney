@@ -92,6 +92,7 @@
     <Compile Include="EditProfile.Designer.cs">
       <DependentUpon>EditProfile.cs</DependentUpon>
     </Compile>
+    <Compile Include="entities\User.cs" />
     <Compile Include="ExactBooking.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +146,7 @@
     <Compile Include="MessageDetails.Designer.cs">
       <DependentUpon>MessageDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="observers\UserObserver.cs" />
     <Compile Include="Payment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +168,7 @@
     <Compile Include="Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
+    <Compile Include="singletons\UserSession.cs" />
     <EmbeddedResource Include="Book Flight.resx">
       <DependentUpon>Book Flight.cs</DependentUpon>
     </EmbeddedResource>

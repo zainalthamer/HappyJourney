@@ -29,19 +29,17 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.flightsGridView = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.originTextBox = new System.Windows.Forms.TextBox();
+            this.destTextBox = new System.Windows.Forms.TextBox();
+            this.arrivalDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.departDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.flightID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.origin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.destination = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Departure = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.arrival = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.startingPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.originLabel = new System.Windows.Forms.Label();
+            this.dstLabel = new System.Windows.Forms.Label();
+            this.departureLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnClear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.flightsGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,116 +57,130 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.flightsGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.flightsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.flightsGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.flightID,
-            this.origin,
-            this.destination,
-            this.Departure,
-            this.arrival,
-            this.startingPrice});
-            this.flightsGridView.Location = new System.Drawing.Point(37, 184);
+            this.flightsGridView.Location = new System.Drawing.Point(37, 218);
             this.flightsGridView.Name = "flightsGridView";
             this.flightsGridView.RowHeadersWidth = 51;
             this.flightsGridView.RowTemplate.Height = 24;
             this.flightsGridView.ShowEditingIcon = false;
-            this.flightsGridView.Size = new System.Drawing.Size(974, 314);
+            this.flightsGridView.Size = new System.Drawing.Size(1079, 383);
             this.flightsGridView.TabIndex = 1;
+            this.flightsGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.flightsGridView_CellClick);
             this.flightsGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // textBox1
+            // originTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(37, 124);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(169, 22);
-            this.textBox1.TabIndex = 2;
+            this.originTextBox.Location = new System.Drawing.Point(37, 82);
+            this.originTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.originTextBox.MinimumSize = new System.Drawing.Size(200, 30);
+            this.originTextBox.Name = "originTextBox";
+            this.originTextBox.Size = new System.Drawing.Size(200, 30);
+            this.originTextBox.TabIndex = 2;
             // 
-            // textBox2
+            // destTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(222, 124);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(166, 22);
-            this.textBox2.TabIndex = 3;
+            this.destTextBox.Location = new System.Drawing.Point(313, 82);
+            this.destTextBox.MinimumSize = new System.Drawing.Size(200, 30);
+            this.destTextBox.Name = "destTextBox";
+            this.destTextBox.Size = new System.Drawing.Size(200, 30);
+            this.destTextBox.TabIndex = 3;
             // 
-            // dateTimePicker1
+            // arrivalDateTimePicker
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(631, 124);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 5;
+            this.arrivalDateTimePicker.Location = new System.Drawing.Point(871, 82);
+            this.arrivalDateTimePicker.MinimumSize = new System.Drawing.Size(200, 30);
+            this.arrivalDateTimePicker.Name = "arrivalDateTimePicker";
+            this.arrivalDateTimePicker.Size = new System.Drawing.Size(200, 30);
+            this.arrivalDateTimePicker.TabIndex = 5;
             // 
-            // dateTimePicker2
+            // departDateTimePicker
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(409, 124);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker2.TabIndex = 6;
+            this.departDateTimePicker.Location = new System.Drawing.Point(587, 82);
+            this.departDateTimePicker.MinimumSize = new System.Drawing.Size(200, 30);
+            this.departDateTimePicker.Name = "departDateTimePicker";
+            this.departDateTimePicker.Size = new System.Drawing.Size(200, 30);
+            this.departDateTimePicker.TabIndex = 6;
             // 
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSearch.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnSearch.Location = new System.Drawing.Point(857, 119);
+            this.btnSearch.Location = new System.Drawing.Point(403, 151);
+            this.btnSearch.MinimumSize = new System.Drawing.Size(100, 30);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(154, 33);
+            this.btnSearch.Size = new System.Drawing.Size(100, 33);
             this.btnSearch.TabIndex = 7;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // flightID
+            // originLabel
             // 
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            this.flightID.DefaultCellStyle = dataGridViewCellStyle2;
-            this.flightID.HeaderText = "FlightID";
-            this.flightID.MinimumWidth = 6;
-            this.flightID.Name = "flightID";
-            this.flightID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.flightID.Width = 125;
+            this.originLabel.AutoSize = true;
+            this.originLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.originLabel.Location = new System.Drawing.Point(34, 47);
+            this.originLabel.Name = "originLabel";
+            this.originLabel.Size = new System.Drawing.Size(53, 18);
+            this.originLabel.TabIndex = 8;
+            this.originLabel.Text = "Origin";
             // 
-            // origin
+            // dstLabel
             // 
-            this.origin.HeaderText = "Origin";
-            this.origin.MinimumWidth = 6;
-            this.origin.Name = "origin";
-            this.origin.Width = 125;
+            this.dstLabel.AutoSize = true;
+            this.dstLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dstLabel.Location = new System.Drawing.Point(310, 47);
+            this.dstLabel.Name = "dstLabel";
+            this.dstLabel.Size = new System.Drawing.Size(93, 18);
+            this.dstLabel.TabIndex = 9;
+            this.dstLabel.Text = "Destination";
             // 
-            // destination
+            // departureLabel
             // 
-            this.destination.HeaderText = "Destination";
-            this.destination.MinimumWidth = 6;
-            this.destination.Name = "destination";
-            this.destination.Width = 125;
+            this.departureLabel.AutoSize = true;
+            this.departureLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.departureLabel.Location = new System.Drawing.Point(584, 47);
+            this.departureLabel.Name = "departureLabel";
+            this.departureLabel.Size = new System.Drawing.Size(124, 18);
+            this.departureLabel.TabIndex = 10;
+            this.departureLabel.Text = "Departure Time";
             // 
-            // Departure
+            // label1
             // 
-            this.Departure.HeaderText = "departure";
-            this.Departure.MinimumWidth = 6;
-            this.Departure.Name = "Departure";
-            this.Departure.Width = 125;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(868, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 18);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Arrival Time";
             // 
-            // arrival
+            // btnClear
             // 
-            this.arrival.HeaderText = "Arrival";
-            this.arrival.MinimumWidth = 6;
-            this.arrival.Name = "arrival";
-            this.arrival.Width = 125;
-            // 
-            // startingPrice
-            // 
-            this.startingPrice.HeaderText = "StaringPrice";
-            this.startingPrice.MinimumWidth = 6;
-            this.startingPrice.Name = "startingPrice";
-            this.startingPrice.Width = 125;
+            this.btnClear.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnClear.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnClear.Location = new System.Drawing.Point(625, 151);
+            this.btnClear.MinimumSize = new System.Drawing.Size(100, 30);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(100, 33);
+            this.btnClear.TabIndex = 12;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // Flights
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1057, 638);
+            this.ClientSize = new System.Drawing.Size(1158, 627);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.departureLabel);
+            this.Controls.Add(this.dstLabel);
+            this.Controls.Add(this.originLabel);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.departDateTimePicker);
+            this.Controls.Add(this.arrivalDateTimePicker);
+            this.Controls.Add(this.destTextBox);
+            this.Controls.Add(this.originTextBox);
             this.Controls.Add(this.flightsGridView);
             this.Name = "Flights";
             this.Text = "Flights";
@@ -180,16 +192,15 @@
 
         #endregion
         private System.Windows.Forms.DataGridView flightsGridView;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.TextBox originTextBox;
+        private System.Windows.Forms.TextBox destTextBox;
+        private System.Windows.Forms.DateTimePicker arrivalDateTimePicker;
+        private System.Windows.Forms.DateTimePicker departDateTimePicker;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.DataGridViewTextBoxColumn flightID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn origin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn destination;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Departure;
-        private System.Windows.Forms.DataGridViewTextBoxColumn arrival;
-        private System.Windows.Forms.DataGridViewTextBoxColumn startingPrice;
+        private System.Windows.Forms.Label originLabel;
+        private System.Windows.Forms.Label dstLabel;
+        private System.Windows.Forms.Label departureLabel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnClear;
     }
 }

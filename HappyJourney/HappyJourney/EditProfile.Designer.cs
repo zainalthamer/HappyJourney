@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.labelEditProfile = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -45,38 +45,43 @@
             this.labelEditProfile.TabIndex = 2;
             this.labelEditProfile.Text = "Edit Profile";
             // 
-            // textBox1
+            // txtFirstName
             // 
-            this.textBox1.Location = new System.Drawing.Point(321, 231);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(157, 22);
-            this.textBox1.TabIndex = 3;
+            this.txtFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFirstName.Location = new System.Drawing.Point(321, 231);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(157, 22);
+            this.txtFirstName.TabIndex = 3;
             // 
-            // textBox2
+            // txtLastName
             // 
-            this.textBox2.Location = new System.Drawing.Point(499, 231);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(165, 22);
-            this.textBox2.TabIndex = 4;
+            this.txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLastName.Location = new System.Drawing.Point(499, 231);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(165, 22);
+            this.txtLastName.TabIndex = 4;
             // 
-            // textBox3
+            // txtPhone
             // 
-            this.textBox3.Location = new System.Drawing.Point(321, 277);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(343, 22);
-            this.textBox3.TabIndex = 5;
+            this.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPhone.Location = new System.Drawing.Point(321, 277);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(343, 22);
+            this.txtPhone.TabIndex = 5;
             // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnSave.Location = new System.Drawing.Point(322, 322);
+            this.btnSave.Location = new System.Drawing.Point(321, 315);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(0);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(342, 31);
+            this.btnSave.Size = new System.Drawing.Size(343, 40);
             this.btnSave.TabIndex = 6;
             this.btnSave.Text = "Save Changes";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // EditProfile
             // 
@@ -84,9 +89,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(952, 485);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPhone);
+            this.Controls.Add(this.txtLastName);
+            this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.labelEditProfile);
             this.Name = "EditProfile";
             this.Text = "EditProfile";
@@ -98,9 +103,9 @@
         #endregion
 
         private System.Windows.Forms.Label labelEditProfile;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Button btnSave;
     }
 }

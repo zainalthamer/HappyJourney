@@ -29,112 +29,50 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlightDetail));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.flightNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.origin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.destination = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.departure = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.arrival = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.seatClass = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.flightsGridView = new System.Windows.Forms.DataGridView();
+            this.seatCategoryGridView = new System.Windows.Forms.DataGridView();
             this.btnBookFlight = new System.Windows.Forms.Button();
             this.imgBackArrow = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flightsGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seatCategoryGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBackArrow)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // flightsGridView
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.flightNumber,
-            this.origin,
-            this.destination,
-            this.departure,
-            this.arrival});
-            this.dataGridView1.Location = new System.Drawing.Point(79, 73);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(808, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.flightsGridView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.flightsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.flightsGridView.Location = new System.Drawing.Point(41, 67);
+            this.flightsGridView.Name = "flightsGridView";
+            this.flightsGridView.RowHeadersWidth = 51;
+            this.flightsGridView.RowTemplate.Height = 24;
+            this.flightsGridView.Size = new System.Drawing.Size(890, 122);
+            this.flightsGridView.TabIndex = 0;
+            this.flightsGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.flightsGridView_CellContentClick);
             // 
-            // flightNumber
+            // seatCategoryGridView
             // 
-            this.flightNumber.HeaderText = "Flight Number";
-            this.flightNumber.MinimumWidth = 6;
-            this.flightNumber.Name = "flightNumber";
-            this.flightNumber.Width = 125;
-            // 
-            // origin
-            // 
-            this.origin.HeaderText = "Origin";
-            this.origin.MinimumWidth = 6;
-            this.origin.Name = "origin";
-            this.origin.Width = 125;
-            // 
-            // destination
-            // 
-            this.destination.HeaderText = "Destination";
-            this.destination.MinimumWidth = 6;
-            this.destination.Name = "destination";
-            this.destination.Width = 125;
-            // 
-            // departure
-            // 
-            this.departure.HeaderText = "Departure";
-            this.departure.MinimumWidth = 6;
-            this.departure.Name = "departure";
-            this.departure.Width = 125;
-            // 
-            // arrival
-            // 
-            this.arrival.HeaderText = "Arrival";
-            this.arrival.MinimumWidth = 6;
-            this.arrival.Name = "arrival";
-            this.arrival.Width = 125;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.seatClass,
-            this.price});
-            this.dataGridView2.Location = new System.Drawing.Point(268, 241);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(397, 158);
-            this.dataGridView2.TabIndex = 1;
-            // 
-            // seatClass
-            // 
-            this.seatClass.HeaderText = "Class";
-            this.seatClass.MinimumWidth = 6;
-            this.seatClass.Name = "seatClass";
-            this.seatClass.Width = 125;
-            // 
-            // price
-            // 
-            this.price.HeaderText = "Price";
-            this.price.MinimumWidth = 6;
-            this.price.Name = "price";
-            this.price.Width = 125;
+            this.seatCategoryGridView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.seatCategoryGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.seatCategoryGridView.Location = new System.Drawing.Point(274, 225);
+            this.seatCategoryGridView.Name = "seatCategoryGridView";
+            this.seatCategoryGridView.RowHeadersWidth = 51;
+            this.seatCategoryGridView.RowTemplate.Height = 24;
+            this.seatCategoryGridView.Size = new System.Drawing.Size(429, 213);
+            this.seatCategoryGridView.TabIndex = 1;
+            this.seatCategoryGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.seatCategoryGridView_CellContentClick);
             // 
             // btnBookFlight
             // 
             this.btnBookFlight.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnBookFlight.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBookFlight.Location = new System.Drawing.Point(421, 418);
+            this.btnBookFlight.Location = new System.Drawing.Point(423, 459);
             this.btnBookFlight.Name = "btnBookFlight";
             this.btnBookFlight.Size = new System.Drawing.Size(124, 38);
             this.btnBookFlight.TabIndex = 2;
             this.btnBookFlight.Text = "Book Flight";
             this.btnBookFlight.UseVisualStyleBackColor = false;
+            this.btnBookFlight.Click += new System.EventHandler(this.btnBookFlight_Click);
             // 
             // imgBackArrow
             // 
@@ -152,15 +90,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(975, 485);
+            this.ClientSize = new System.Drawing.Size(975, 519);
             this.Controls.Add(this.imgBackArrow);
             this.Controls.Add(this.btnBookFlight);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.seatCategoryGridView);
+            this.Controls.Add(this.flightsGridView);
             this.Name = "FlightDetail";
             this.Text = "FlightDetail";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flightsGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seatCategoryGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBackArrow)).EndInit();
             this.ResumeLayout(false);
 
@@ -168,15 +106,8 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn flightNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn origin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn destination;
-        private System.Windows.Forms.DataGridViewTextBoxColumn departure;
-        private System.Windows.Forms.DataGridViewTextBoxColumn arrival;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn seatClass;
-        private System.Windows.Forms.DataGridViewTextBoxColumn price;
+        private System.Windows.Forms.DataGridView flightsGridView;
+        private System.Windows.Forms.DataGridView seatCategoryGridView;
         private System.Windows.Forms.Button btnBookFlight;
         private System.Windows.Forms.PictureBox imgBackArrow;
     }
