@@ -132,8 +132,9 @@
             this.btnManageUserRoles.Name = "btnManageUserRoles";
             this.btnManageUserRoles.Size = new System.Drawing.Size(308, 60);
             this.btnManageUserRoles.TabIndex = 5;
-            this.btnManageUserRoles.Text = "Manage User Roles";
+            this.btnManageUserRoles.Text = "View User Roles";
             this.btnManageUserRoles.UseVisualStyleBackColor = false;
+            this.btnManageUserRoles.Click += new System.EventHandler(this.btnManageUserRoles_Click);
             // 
             // btnManageFlights
             // 

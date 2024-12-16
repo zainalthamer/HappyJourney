@@ -61,5 +61,12 @@ namespace HappyJourney
             manageUsers.ShowDialog();
             this.Hide();
         }
+
+        private void btnManageUserRoles_Click(object sender, EventArgs e)
+        {
+            ManageRoles manageRoles = new ManageRoles(loggedInUserId, loggedInUserRoleId);
+            manageRoles.ShowDialog();
+            this.Hide();
+        }
     }
 }
