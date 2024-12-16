@@ -116,6 +116,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>happy_journeyDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="happy_journeyDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>happy_journeyDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,6 +265,17 @@
     </None>
     <None Include="happy_journeyDataSet2.xss">
       <DependentUpon>happy_journeyDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="happy_journeyDataSet3.xsc">
+      <DependentUpon>happy_journeyDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="happy_journeyDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>happy_journeyDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="happy_journeyDataSet3.xss">
+      <DependentUpon>happy_journeyDataSet3.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
