@@ -36,6 +36,7 @@
             this.lblSignupLink = new System.Windows.Forms.LinkLabel();
             this.txtBoxPassword = new System.Windows.Forms.TextBox();
             this.txtBoxEmail = new System.Windows.Forms.TextBox();
+            this.btnTest = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,12 +108,23 @@
             this.txtBoxEmail.Size = new System.Drawing.Size(418, 31);
             this.txtBoxEmail.TabIndex = 14;
             // 
+            // btnTest
+            // 
+            this.btnTest.Location = new System.Drawing.Point(177, 181);
+            this.btnTest.Name = "btnTest";
+            this.btnTest.Size = new System.Drawing.Size(83, 62);
+            this.btnTest.TabIndex = 16;
+            this.btnTest.Text = "Test";
+            this.btnTest.UseVisualStyleBackColor = true;
+            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1472, 719);
+            this.Controls.Add(this.btnTest);
             this.Controls.Add(this.txtBoxPassword);
             this.Controls.Add(this.txtBoxEmail);
             this.Controls.Add(this.lblSignupLink);
@@ -139,5 +151,6 @@
         private System.Windows.Forms.LinkLabel lblSignupLink;
         private System.Windows.Forms.TextBox txtBoxPassword;
         private System.Windows.Forms.TextBox txtBoxEmail;
+        private System.Windows.Forms.Button btnTest;
     }
 }

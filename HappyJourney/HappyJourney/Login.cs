@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -39,7 +40,7 @@ namespace HappyJourney
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\zainn\\OneDrive\\Desktop\\HappyJourney\\HappyJourney\\HappyJourney\\happy_journey.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
 
             string email = txtBoxEmail.Text.Trim();
             string password = txtBoxPassword.Text.Trim();
@@ -83,6 +84,17 @@ namespace HappyJourney
                 byte[] hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
                 return Convert.ToBase64String(hashedBytes);
             }
+        }
+
+        private void btnTest_Click(object sender, EventArgs e)
+        {
+            LoggedInUserId = 1; 
+            LoggedInUserRoleId = 1; 
+
+            Home home = new Home(LoggedInUserId, LoggedInUserRoleId);
+            this.Hide();
+            home.ShowDialog();
+            this.Close();
         }
     }
 }

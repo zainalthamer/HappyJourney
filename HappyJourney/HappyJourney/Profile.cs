@@ -14,6 +14,7 @@ namespace HappyJourney
     {
         private int loggedInUserId;
         private int loggedInUserRoleId;
+        private int passedUserId;
 
         public Profile(int userId, int roleId)
         {

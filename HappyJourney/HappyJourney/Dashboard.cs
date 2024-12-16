@@ -54,5 +54,12 @@ namespace HappyJourney
         {
 
         }
+
+        private void btnManageUserAccounts_Click(object sender, EventArgs e)
+        {
+            ManageUsers manageUsers = new ManageUsers(loggedInUserId, loggedInUserRoleId);
+            manageUsers.ShowDialog();
+            this.Hide();
+        }
     }
 }

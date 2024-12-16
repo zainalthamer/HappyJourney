@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -134,7 +135,7 @@ namespace HappyJourney
             // save the traveler to the database
             try
             {
-                string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\zainn\\OneDrive\\Desktop\\HappyJourney\\HappyJourney\\HappyJourney\\happy_journey.mdf;Integrated Security=True;Connect Timeout=30";
+                string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();

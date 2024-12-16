@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -34,7 +35,7 @@ namespace HappyJourney
 
         private void LoadMessagesForUser()
         {
-            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\zainn\\OneDrive\\Desktop\\HappyJourney\\HappyJourney\\HappyJourney\\happy_journey.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
             string query = @"SELECT U.email AS Sender, M.content AS Message, M.date AS Timestamp FROM Message M INNER JOIN [User] U ON M.sender_id = U.user_id WHERE M.receiver_id = @ReceiverId;";
 
             using (SqlConnection connection = new SqlConnection(connectionString))

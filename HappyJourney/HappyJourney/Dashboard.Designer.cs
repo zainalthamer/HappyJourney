@@ -121,6 +121,7 @@
             this.btnManageUserAccounts.TabIndex = 4;
             this.btnManageUserAccounts.Text = "Manage User Accounts";
             this.btnManageUserAccounts.UseVisualStyleBackColor = false;
+            this.btnManageUserAccounts.Click += new System.EventHandler(this.btnManageUserAccounts_Click);
             // 
             // btnManageUserRoles
             // 

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace HappyJourney
 {
@@ -100,7 +101,7 @@ namespace HappyJourney
 
         private void BroadcastMessage(string messageContent, DateTime messageDate)
         {
-            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\zainn\\OneDrive\\Desktop\\HappyJourney\\HappyJourney\\HappyJourney\\happy_journey.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -124,7 +125,7 @@ namespace HappyJourney
 
         private void SendMessage(string messageContent, DateTime messageDate, string recipientEmail)
         {
-            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\zainn\\OneDrive\\Desktop\\HappyJourney\\HappyJourney\\HappyJourney\\happy_journey.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
