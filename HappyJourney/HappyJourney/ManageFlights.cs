@@ -90,14 +90,14 @@ namespace HappyJourney
 
             DataGridViewButtonColumn editButton = new DataGridViewButtonColumn();
             editButton.Name = "EditColumn";
-            editButton.HeaderText = "Edit User";
+            editButton.HeaderText = "Edit Flight";
             editButton.Text = "Edit";
             editButton.UseColumnTextForButtonValue = true;
             dataGridFlights.Columns.Add(editButton);
 
             DataGridViewButtonColumn deleteButton = new DataGridViewButtonColumn();
             deleteButton.Name = "DeleteColumn";
-            deleteButton.HeaderText = "Delete User";
+            deleteButton.HeaderText = "Delete Flight";
             deleteButton.Text = "Delete";
             deleteButton.UseColumnTextForButtonValue = true;
             dataGridFlights.Columns.Add(deleteButton);
