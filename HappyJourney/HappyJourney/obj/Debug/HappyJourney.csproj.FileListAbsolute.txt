@@ -74,3 +74,6 @@ C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug
 C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.AddCity.resources
 C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.AddAirport.resources
 C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.ManageAirports.resources
+C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.AddService.resources
+C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.EditService.resources
+C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.ManageServices.resources

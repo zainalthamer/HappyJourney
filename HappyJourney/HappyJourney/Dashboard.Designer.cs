@@ -160,6 +160,7 @@
             this.btnManageServices.TabIndex = 7;
             this.btnManageServices.Text = "Manage Services";
             this.btnManageServices.UseVisualStyleBackColor = false;
+            this.btnManageServices.Click += new System.EventHandler(this.btnManageServices_Click);
             // 
             // btnManageCountries
             // 
