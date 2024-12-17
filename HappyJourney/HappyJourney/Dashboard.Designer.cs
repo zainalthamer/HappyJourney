@@ -209,6 +209,7 @@
             this.btnManageCities.TabIndex = 10;
             this.btnManageCities.Text = "Manage Cities";
             this.btnManageCities.UseVisualStyleBackColor = false;
+            this.btnManageCities.Click += new System.EventHandler(this.btnManageCities_Click);
             // 
             // btnManageBackupLogs
             // 

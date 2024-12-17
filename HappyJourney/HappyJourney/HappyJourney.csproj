@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCity.Designer.cs">
+      <DependentUpon>AddCity.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddCountry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageCities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageCities.Designer.cs">
+      <DependentUpon>ManageCities.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageCountries.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,6 +241,9 @@
     <Compile Include="UserProfile.Designer.cs">
       <DependentUpon>UserProfile.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddCity.resx">
+      <DependentUpon>AddCity.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddCountry.resx">
       <DependentUpon>AddCountry.cs</DependentUpon>
     </EmbeddedResource>
@@ -264,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageCities.resx">
+      <DependentUpon>ManageCities.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageCountries.resx">
       <DependentUpon>ManageCountries.cs</DependentUpon>

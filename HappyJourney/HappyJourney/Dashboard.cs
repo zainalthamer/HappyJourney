@@ -82,5 +82,12 @@ namespace HappyJourney
             manageCountries.ShowDialog();
             this.Hide();
         }
+
+        private void btnManageCities_Click(object sender, EventArgs e)
+        {
+            ManageCities manageCities = new ManageCities(loggedInUserId, loggedInUserRoleId);
+            manageCities.ShowDialog();
+            this.Hide();
+        }
     }
 }
