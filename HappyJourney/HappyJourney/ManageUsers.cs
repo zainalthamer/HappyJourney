@@ -27,7 +27,6 @@ namespace HappyJourney
             PlaceholderService.SetupPlaceholder(txtSearchBar, "Enter User ID");
             SetupDataGridView();
 
-            // attach the cellClick event
             dataGridUsers.CellClick += dataGridUsers_CellClick;
         }
 

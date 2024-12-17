@@ -172,6 +172,7 @@
             this.btnManageCountries.TabIndex = 9;
             this.btnManageCountries.Text = "Manage Countries";
             this.btnManageCountries.UseVisualStyleBackColor = false;
+            this.btnManageCountries.Click += new System.EventHandler(this.btnManageCountries_Click);
             // 
             // btnManageBookings
             // 

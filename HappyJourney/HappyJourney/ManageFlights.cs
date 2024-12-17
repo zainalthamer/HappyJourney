@@ -253,6 +253,40 @@ namespace HappyJourney
             }
         }
 
+        private void dashboardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard(loggedInUserId, loggedInUserRoleId);
+            dashboard.ShowDialog();
+            this.Hide();
+        }
+
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Home home = new Home(loggedInUserId, loggedInUserRoleId);
+            home.ShowDialog();
+            this.Hide();
+        }
+
+        private void profileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Profile profile = new Profile(loggedInUserId, loggedInUserRoleId);
+            profile.ShowDialog();
+            this.Hide();
+        }
+
+        private void inboxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Inbox inbox = new Inbox(loggedInUserId, loggedInUserRoleId);
+            inbox.ShowDialog();
+            this.Hide();
+        }
+
+        private void composeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Compose compose = new Compose(loggedInUserId, loggedInUserRoleId);
+            compose.ShowDialog();
+            this.Hide();
+        }
     }
 }
     

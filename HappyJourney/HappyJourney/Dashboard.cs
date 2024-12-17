@@ -75,5 +75,12 @@ namespace HappyJourney
             manageFlights.ShowDialog();
             this.Hide();
         }
+
+        private void btnManageCountries_Click(object sender, EventArgs e)
+        {
+            ManageCountries manageCountries = new ManageCountries(loggedInUserId, loggedInUserRoleId);
+            manageCountries.ShowDialog();
+            this.Hide();
+        }
     }
 }

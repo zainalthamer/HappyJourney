@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.mnuManageFlights = new System.Windows.Forms.MenuStrip();
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dashboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,13 +39,13 @@
             this.inboxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.composeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridFlights = new System.Windows.Forms.DataGridView();
+            this.flight_id = new System.Windows.Forms.DataGridViewButtonColumn();
             this.flightBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.happy_journeyDataSet6 = new HappyJourney.happy_journeyDataSet6();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearchBar = new System.Windows.Forms.TextBox();
             this.btnAddFlight = new System.Windows.Forms.Button();
             this.flightTableAdapter = new HappyJourney.happy_journeyDataSet6TableAdapters.FlightTableAdapter();
-            this.flight_id = new System.Windows.Forms.DataGridViewButtonColumn();
             this.mnuManageFlights.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridFlights)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flightBindingSource)).BeginInit();
@@ -64,74 +64,89 @@
             this.composeToolStripMenuItem});
             this.mnuManageFlights.Location = new System.Drawing.Point(0, 0);
             this.mnuManageFlights.Name = "mnuManageFlights";
-            this.mnuManageFlights.Size = new System.Drawing.Size(1472, 40);
+            this.mnuManageFlights.Size = new System.Drawing.Size(1472, 42);
             this.mnuManageFlights.TabIndex = 0;
             this.mnuManageFlights.Text = "menuStrip1";
             // 
             // homeToolStripMenuItem
             // 
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(99, 36);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(99, 38);
             this.homeToolStripMenuItem.Text = "Home";
+            this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
             // dashboardToolStripMenuItem
             // 
             this.dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
-            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(149, 36);
+            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(149, 38);
             this.dashboardToolStripMenuItem.Text = "Dashboard";
+            this.dashboardToolStripMenuItem.Click += new System.EventHandler(this.dashboardToolStripMenuItem_Click);
             // 
             // profileToolStripMenuItem
             // 
             this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
-            this.profileToolStripMenuItem.Size = new System.Drawing.Size(102, 36);
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(102, 38);
             this.profileToolStripMenuItem.Text = "Profile";
+            this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
             // 
             // inboxToolStripMenuItem
             // 
             this.inboxToolStripMenuItem.Name = "inboxToolStripMenuItem";
-            this.inboxToolStripMenuItem.Size = new System.Drawing.Size(93, 36);
+            this.inboxToolStripMenuItem.Size = new System.Drawing.Size(93, 38);
             this.inboxToolStripMenuItem.Text = "Inbox";
+            this.inboxToolStripMenuItem.Click += new System.EventHandler(this.inboxToolStripMenuItem_Click);
             // 
             // composeToolStripMenuItem
             // 
             this.composeToolStripMenuItem.Name = "composeToolStripMenuItem";
-            this.composeToolStripMenuItem.Size = new System.Drawing.Size(135, 36);
+            this.composeToolStripMenuItem.Size = new System.Drawing.Size(135, 38);
             this.composeToolStripMenuItem.Text = "Compose";
+            this.composeToolStripMenuItem.Click += new System.EventHandler(this.composeToolStripMenuItem_Click);
             // 
             // dataGridFlights
             // 
             this.dataGridFlights.AutoGenerateColumns = false;
             this.dataGridFlights.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridFlights.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridFlights.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dataGridFlights.ColumnHeadersHeight = 30;
             this.dataGridFlights.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.flight_id});
             this.dataGridFlights.DataSource = this.flightBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridFlights.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridFlights.DefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridFlights.EnableHeadersVisualStyles = false;
             this.dataGridFlights.Location = new System.Drawing.Point(28, 208);
             this.dataGridFlights.Name = "dataGridFlights";
             this.dataGridFlights.RowHeadersWidth = 82;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.dataGridFlights.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            this.dataGridFlights.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridFlights.RowTemplate.Height = 33;
             this.dataGridFlights.Size = new System.Drawing.Size(1419, 512);
             this.dataGridFlights.TabIndex = 8;
+            // 
+            // flight_id
+            // 
+            this.flight_id.DataPropertyName = "flight_id";
+            this.flight_id.HeaderText = "Flight ID";
+            this.flight_id.MinimumWidth = 10;
+            this.flight_id.Name = "flight_id";
+            this.flight_id.ReadOnly = true;
+            this.flight_id.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.flight_id.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // flightBindingSource
             // 
@@ -179,16 +194,6 @@
             // flightTableAdapter
             // 
             this.flightTableAdapter.ClearBeforeFill = true;
-            // 
-            // flight_id
-            // 
-            this.flight_id.DataPropertyName = "flight_id";
-            this.flight_id.HeaderText = "Flight ID";
-            this.flight_id.MinimumWidth = 10;
-            this.flight_id.Name = "flight_id";
-            this.flight_id.ReadOnly = true;
-            this.flight_id.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.flight_id.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // ManageFlights
             // 
