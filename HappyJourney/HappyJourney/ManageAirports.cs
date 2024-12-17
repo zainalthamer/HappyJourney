@@ -33,6 +33,7 @@ namespace HappyJourney
             LoadData();
             dataGridAirports.CellContentClick += dataGridAirports_CellContentClick;
             btnSearch.Click += btnSearch_Click;
+            btnAddAirport.Click += btnAddAirport_Click;
         }
 
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
