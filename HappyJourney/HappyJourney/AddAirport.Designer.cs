@@ -115,6 +115,7 @@
             this.imgBackArrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgBackArrow.TabIndex = 42;
             this.imgBackArrow.TabStop = false;
+            this.imgBackArrow.Click += new System.EventHandler(this.imgBackArrow_Click);
             // 
             // btnAdd
             // 
@@ -127,6 +128,7 @@
             this.btnAdd.TabIndex = 41;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // lblAddAirport
             // 
