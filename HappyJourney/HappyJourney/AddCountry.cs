@@ -102,13 +102,6 @@ namespace HappyJourney
             };
         }
 
-        private void imgBackArrow_Click_1(object sender, EventArgs e)
-        {
-            ManageCountries manageCountries = new ManageCountries(loggedInUserId, loggedInUserRoleId);
-            manageCountries.ShowDialog();
-            this.Hide();
-        }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
             try

@@ -97,7 +97,6 @@
             this.imgBackArrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgBackArrow.TabIndex = 31;
             this.imgBackArrow.TabStop = false;
-            this.imgBackArrow.Click += new System.EventHandler(this.imgBackArrow_Click_1);
             // 
             // btnAdd
             // 
