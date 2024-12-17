@@ -89,5 +89,12 @@ namespace HappyJourney
             manageCities.ShowDialog();
             this.Hide();
         }
+
+        private void btnManageAirports_Click(object sender, EventArgs e)
+        {
+            ManageAirports manageAirports = new ManageAirports(loggedInUserId, loggedInUserRoleId);
+            manageAirports.ShowDialog();
+            this.Hide();
+        }
     }
 }

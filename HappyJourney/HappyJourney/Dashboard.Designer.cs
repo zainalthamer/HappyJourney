@@ -197,6 +197,7 @@
             this.btnManageAirports.TabIndex = 11;
             this.btnManageAirports.Text = "Manage Airports";
             this.btnManageAirports.UseVisualStyleBackColor = false;
+            this.btnManageAirports.Click += new System.EventHandler(this.btnManageAirports_Click);
             // 
             // btnManageCities
             // 
