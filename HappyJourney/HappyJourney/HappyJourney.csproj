@@ -226,6 +226,12 @@
     <Compile Include="ManageCountries.Designer.cs">
       <DependentUpon>ManageCountries.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageDatabaseBackups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageDatabaseBackups.Designer.cs">
+      <DependentUpon>ManageDatabaseBackups.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageFlights.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -345,6 +351,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManageCountries.resx">
       <DependentUpon>ManageCountries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageDatabaseBackups.resx">
+      <DependentUpon>ManageDatabaseBackups.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageFlights.resx">
       <DependentUpon>ManageFlights.cs</DependentUpon>

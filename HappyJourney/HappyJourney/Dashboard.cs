@@ -110,5 +110,12 @@ namespace HappyJourney
             manageBookings.ShowDialog();
             this.Hide();
         }
+
+        private void btnManageBackupLogs_Click(object sender, EventArgs e)
+        {
+            ManageDatabaseBackups manageDatabaseBackups = new ManageDatabaseBackups(loggedInUserId, loggedInUserRoleId);
+            manageDatabaseBackups.ShowDialog();
+            this.Hide();
+        }
     }
 }

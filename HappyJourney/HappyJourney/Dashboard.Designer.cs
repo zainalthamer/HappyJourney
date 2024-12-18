@@ -225,6 +225,7 @@
             this.btnManageBackupLogs.TabIndex = 13;
             this.btnManageBackupLogs.Text = "Manage Backup Logs";
             this.btnManageBackupLogs.UseVisualStyleBackColor = false;
+            this.btnManageBackupLogs.Click += new System.EventHandler(this.btnManageBackupLogs_Click);
             // 
             // btnManageReports
             // 
