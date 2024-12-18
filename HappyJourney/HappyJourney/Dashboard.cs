@@ -103,5 +103,12 @@ namespace HappyJourney
             manageServices.ShowDialog();
             this.Hide();
         }
+
+        private void btnManageBookings_Click(object sender, EventArgs e)
+        {
+            ManageBookings manageBookings = new ManageBookings(loggedInUserId, loggedInUserRoleId);
+            manageBookings.ShowDialog();
+            this.Hide();
+        }
     }
 }

@@ -186,6 +186,7 @@
             this.btnManageBookings.TabIndex = 8;
             this.btnManageBookings.Text = "Manage Bookings";
             this.btnManageBookings.UseVisualStyleBackColor = false;
+            this.btnManageBookings.Click += new System.EventHandler(this.btnManageBookings_Click);
             // 
             // btnManageAirports
             // 

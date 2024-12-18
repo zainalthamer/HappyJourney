@@ -77,3 +77,5 @@ C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug
 C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.AddService.resources
 C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.EditService.resources
 C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.ManageServices.resources
+C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.EditBooking.resources
+C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.ManageBookings.resources
