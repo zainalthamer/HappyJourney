@@ -10,7 +10,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HappyJourney.entities;
 using HappyJourney.services;
+using HappyJourney.singletons;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace HappyJourney
@@ -21,7 +23,12 @@ namespace HappyJourney
         public Bookings()
         {
             InitializeComponent();
-            FetchAndLogBookings(2);
+
+            User user = UserSession.Instance.CurrentUser;
+
+            if (user != null) {
+                FetchAndLogBookings(user.UserId);
+            }
 
             PlaceholderService.SetupPlaceholder(textBoxSearch, bookingIdPlaceholder);
 
