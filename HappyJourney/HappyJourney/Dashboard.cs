@@ -45,7 +45,7 @@ namespace HappyJourney
 
         private void profileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Profile profile = new Profile(loggedInUserId, loggedInUserRoleId);
+            Profile profile = new Profile();
             profile.Show();
             this.Close();
         }

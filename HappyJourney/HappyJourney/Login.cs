@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -10,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using HappyJourney.services;
+using HappyJourney.singletons;
 
 namespace HappyJourney
 {
@@ -39,13 +41,13 @@ namespace HappyJourney
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\zainn\\OneDrive\\Desktop\\HappyJourney\\HappyJourney\\HappyJourney\\happy_journey.mdf;Integrated Security=True;Connect Timeout=30";
+            string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
 
             string email = txtBoxEmail.Text.Trim();
             string password = txtBoxPassword.Text.Trim();
             string hashedPassword = HashPassword(password);
 
-            string query = "SELECT user_id, role_id FROM [User] WHERE email = @Email AND hashed_password = @Password";
+            string query = "SELECT * FROM [User] WHERE email = @Email AND hashed_password = @Password";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -61,12 +63,21 @@ namespace HappyJourney
                         LoggedInUserId = Convert.ToInt32(reader["user_id"]);
                         LoggedInUserRoleId = Convert.ToInt32(reader["role_id"]);
 
+                        UserSession.Instance.Initialize(
+                               reader["user_id"].ToString(),
+                               reader["email"].ToString(),
+                               reader["first_name"].ToString(),
+                               reader["last_name"].ToString(),
+                               reader["nationality"].ToString(),
+                               reader["date_of_birth"].ToString(),
+                               reader["phone"].ToString(),
+                               reader["role_id"].ToString(),
+                               reader["is_subscribed"].ToString()
+                         );
+
                         Home home = new Home(LoggedInUserId, LoggedInUserRoleId);
                         this.Hide();
-                        home.ShowDialog();
-                        this.Close();
-
-
+                        home.Show();
                     }
                     else
                     {

@@ -22,7 +22,6 @@ C:\Users\rehan\Source\Repos\HappyJourney\HappyJourney\HappyJourney\obj\Debug\Hap
 C:\Users\rehan\Source\Repos\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.Book_flight.resources
 C:\Users\rehan\Source\Repos\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.Compose.resources
 C:\Users\rehan\Source\Repos\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.Dashboard.resources
-C:\Users\rehan\Source\Repos\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.Form1.resources
 C:\Users\rehan\Source\Repos\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.Inbox.resources
 C:\Users\rehan\Source\Repos\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.MessageDetails.resources
 C:\Users\rehan\Source\Repos\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.Payment.resources
@@ -57,3 +56,7 @@ C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug
 C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.Home.resources
 C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.Bookings.resources
 C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.Profile.resources
+C:\Users\rehan\Source\Repos\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.Bookings.resources
+C:\Users\rehan\Source\Repos\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.Profile.resources
+C:\Users\rehan\Source\Repos\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.ExactBooking.resources
+C:\Users\rehan\Source\Repos\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.FlightDetail.resources

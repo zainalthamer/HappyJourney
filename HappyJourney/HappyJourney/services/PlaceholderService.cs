@@ -13,8 +13,7 @@ namespace HappyJourney.services
         static public void SetupPlaceholder(TextBox textBox, string placeholderText)
         {
             // Set placeholder text and color
-            textBox.Text = placeholderText;
-            textBox.ForeColor = Color.LightGray;
+            clearText(textBox, placeholderText);
 
             // clear placeholder text on focus
             textBox.GotFocus += (sender, e) =>
@@ -31,10 +30,15 @@ namespace HappyJourney.services
             {
                 if (string.IsNullOrWhiteSpace(textBox.Text))
                 {
-                    textBox.Text = placeholderText; // Restore placeholder text
-                    textBox.ForeColor = Color.LightGray; // Set placeholder color
+                    clearText(textBox, placeholderText);
                 }
             };
+        }
+
+        static public void clearText(TextBox textBox, string placeholderText)
+        {
+            textBox.Text = placeholderText;
+            textBox.ForeColor = Color.LightGray;
         }
     }
 }

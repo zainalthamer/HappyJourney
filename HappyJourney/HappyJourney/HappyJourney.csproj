@@ -49,6 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -85,6 +86,25 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProfile.Designer.cs">
+      <DependentUpon>EditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="entities\User.cs" />
+    <Compile Include="ExactBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExactBooking.Designer.cs">
+      <DependentUpon>ExactBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlightDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlightDetail.Designer.cs">
+      <DependentUpon>FlightDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="happy_journeyDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -114,6 +134,7 @@
     <Compile Include="MessageDetails.Designer.cs">
       <DependentUpon>MessageDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="observers\UserObserver.cs" />
     <Compile Include="Payment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +156,7 @@
     <Compile Include="Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
+    <Compile Include="singletons\UserSession.cs" />
     <EmbeddedResource Include="Book Flight.resx">
       <DependentUpon>Book Flight.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,8 +169,11 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="ExactBooking.resx">
+      <DependentUpon>ExactBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlightDetail.resx">
+      <DependentUpon>FlightDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inbox.resx">
       <DependentUpon>Inbox.cs</DependentUpon>
@@ -173,6 +198,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
@@ -210,6 +236,7 @@
       <DependentUpon>happy_journey.mdf</DependentUpon>
     </Content>
     <Content Include="Logo.png" />
+    <None Include="Resources\Back arrow.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -10,6 +11,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HappyJourney.singletons;
 
 namespace HappyJourney
 {
@@ -134,7 +136,7 @@ namespace HappyJourney
             // save the traveler to the database
             try
             {
-                string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\zainn\\OneDrive\\Desktop\\HappyJourney\\HappyJourney\\HappyJourney\\happy_journey.mdf;Integrated Security=True;Connect Timeout=30";
+                string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
@@ -154,6 +156,21 @@ namespace HappyJourney
                         command.Parameters.AddWithValue("@IsSubscribed", 0); // Default not subscribed
 
                         command.ExecuteNonQuery();
+
+                        command.CommandText = "SELECT SCOPE_IDENTITY()";
+                        object newUserId = command.ExecuteScalar();
+
+                        UserSession.Instance.Initialize(
+                            newUserId.ToString(),
+                            email.ToString(),
+                            firstName.ToString(),
+                            lastName.ToString(),
+                            nationality.ToString(),
+                            parsedDateOfBirth.ToString(),
+                            phone.ToString(),
+                            "3",
+                            "0"
+                        );
                     }
                 }
 

@@ -110,7 +110,7 @@ namespace HappyJourney
 
         private void NavigateToProfile()
         {
-            Profile profile = new Profile(loggedInUserId, loggedInUserRoleId);
+            Profile profile = new Profile();
             profile.ShowDialog();
             this.Hide();
         }
@@ -124,7 +124,7 @@ namespace HappyJourney
 
         private void NavigateToBookings()
         {
-            Bookings bookings = new Bookings(loggedInUserId, loggedInUserRoleId);
+            Bookings bookings = new Bookings();
             bookings.ShowDialog();
             this.Hide();
         }
