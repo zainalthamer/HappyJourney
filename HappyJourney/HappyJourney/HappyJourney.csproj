@@ -149,6 +149,12 @@
     <Compile Include="EditUser.Designer.cs">
       <DependentUpon>EditUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="FlightDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlightDetail.Designer.cs">
+      <DependentUpon>FlightDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="happy_journeyDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -238,6 +244,12 @@
     <Compile Include="ManageFlights.Designer.cs">
       <DependentUpon>ManageFlights.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageReports.Designer.cs">
+      <DependentUpon>ManageReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageRoles.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,6 +274,7 @@
     <Compile Include="MessageDetails.Designer.cs">
       <DependentUpon>MessageDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Passenger.cs" />
     <Compile Include="Payment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -331,6 +344,9 @@
     <EmbeddedResource Include="EditUser.resx">
       <DependentUpon>EditUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FlightDetail.resx">
+      <DependentUpon>FlightDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -357,6 +373,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManageFlights.resx">
       <DependentUpon>ManageFlights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageReports.resx">
+      <DependentUpon>ManageReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageRoles.resx">
       <DependentUpon>ManageRoles.cs</DependentUpon>

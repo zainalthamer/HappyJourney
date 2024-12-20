@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Payment));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.mnuPayment = new System.Windows.Forms.MenuStrip();
             this.lblPayment = new System.Windows.Forms.Label();
             this.lblPaymentMethod = new System.Windows.Forms.Label();
             this.cmbPaymentMethod = new System.Windows.Forms.ComboBox();
             this.lblCardNumber = new System.Windows.Forms.Label();
-            this.txtCardNumer = new System.Windows.Forms.TextBox();
+            this.txtCardNumber = new System.Windows.Forms.TextBox();
             this.lblExpiration = new System.Windows.Forms.Label();
             this.txtCvv = new System.Windows.Forms.TextBox();
             this.lblCvv = new System.Windows.Forms.Label();
@@ -52,15 +52,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgBackArrow)).BeginInit();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // mnuPayment
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1472, 42);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.mnuPayment.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.mnuPayment.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.mnuPayment.Location = new System.Drawing.Point(0, 0);
+            this.mnuPayment.Name = "mnuPayment";
+            this.mnuPayment.Size = new System.Drawing.Size(1472, 24);
+            this.mnuPayment.TabIndex = 0;
+            this.mnuPayment.Text = "menuStrip1";
             // 
             // lblPayment
             // 
@@ -104,12 +104,12 @@
             this.lblCardNumber.Text = "Card Number";
             this.lblCardNumber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // txtCardNumer
+            // txtCardNumber
             // 
-            this.txtCardNumer.Location = new System.Drawing.Point(525, 299);
-            this.txtCardNumer.Name = "txtCardNumer";
-            this.txtCardNumer.Size = new System.Drawing.Size(470, 31);
-            this.txtCardNumer.TabIndex = 5;
+            this.txtCardNumber.Location = new System.Drawing.Point(525, 299);
+            this.txtCardNumber.Name = "txtCardNumber";
+            this.txtCardNumber.Size = new System.Drawing.Size(470, 31);
+            this.txtCardNumber.TabIndex = 5;
             // 
             // lblExpiration
             // 
@@ -266,13 +266,13 @@
             this.Controls.Add(this.txtCvv);
             this.Controls.Add(this.lblCvv);
             this.Controls.Add(this.lblExpiration);
-            this.Controls.Add(this.txtCardNumer);
+            this.Controls.Add(this.txtCardNumber);
             this.Controls.Add(this.lblCardNumber);
             this.Controls.Add(this.cmbPaymentMethod);
             this.Controls.Add(this.lblPaymentMethod);
             this.Controls.Add(this.lblPayment);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.mnuPayment);
+            this.MainMenuStrip = this.mnuPayment;
             this.Name = "Payment";
             this.Text = "Payment";
             this.Load += new System.EventHandler(this.Payment_Load);
@@ -284,12 +284,12 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip mnuPayment;
         private System.Windows.Forms.Label lblPayment;
         private System.Windows.Forms.Label lblPaymentMethod;
         private System.Windows.Forms.ComboBox cmbPaymentMethod;
         private System.Windows.Forms.Label lblCardNumber;
-        private System.Windows.Forms.TextBox txtCardNumer;
+        private System.Windows.Forms.TextBox txtCardNumber;
         private System.Windows.Forms.Label lblExpiration;
         private System.Windows.Forms.TextBox txtCvv;
         private System.Windows.Forms.Label lblCvv;

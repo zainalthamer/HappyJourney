@@ -223,7 +223,9 @@ namespace HappyJourney
             }
             else if (dataGridFlights.Columns[e.ColumnIndex].HeaderText == "Flight ID")
             {
-                // add logic for displaying the flight detail form
+                FlightDetail flightDetail = new FlightDetail(loggedInUserId, loggedInUserRoleId, flightId);
+                flightDetail.ShowDialog();
+                this.Hide();
             }
         }
 

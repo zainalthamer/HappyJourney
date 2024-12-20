@@ -80,3 +80,4 @@ C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug
 C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.EditBooking.resources
 C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.ManageBookings.resources
 C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.ManageDatabaseBackups.resources
+C:\Users\zainn\OneDrive\Desktop\HappyJourney\HappyJourney\HappyJourney\obj\Debug\HappyJourney.FlightDetail.resources
